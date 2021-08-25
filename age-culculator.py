@@ -11,8 +11,8 @@ date_now = datetime.datetime.now()
 date_input_str = input('enter date (2544-08-16): ')
 date_input_obj = datetime.datetime.strptime(date_input_str, '%Y-%m-%d')
 
-DaysInBdayMonth = calendar.monthrange(date_input_obj.year, date_input_obj.month)[1] # 31
-DaysRemain = date_now.day + (DaysInBdayMonth - date_input_obj.day) # 49
+DaysInBdayMonth = calendar.monthrange(date_input_obj.year, date_input_obj.month)[1]
+DaysRemain = date_now.day + (DaysInBdayMonth - date_input_obj.day) 
 
 year, month, day = 0,0,0
 
